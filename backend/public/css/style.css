@@ -1,0 +1,116 @@
+/* Chat container */
+.chat {
+  width: 400px;
+  max-width: 90%;
+  margin: 30px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+  background-color: #fdfdfd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Messages area */
+#messages {
+  height: 350px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Bot messages */
+.bot-msg {
+  color: #0044cc;
+  background-color: #e6f0ff;
+  padding: 6px 10px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  white-space: pre-wrap; /* preserves line breaks */
+}
+
+/* User messages */
+.user-msg {
+  color: #0a8000;
+  background-color: #e6ffe6;
+  padding: 6px 10px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  text-align: right;
+  white-space: pre-wrap; /* preserves line breaks */
+}
+
+/* Input field */
+#user-input {
+  width: 70%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-right: 5px;
+}
+
+/* Send button */
+#send-btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #0044cc;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#send-btn:hover {
+  background-color: #002a80;
+}
+
+/* Pay Now button */
+#pay-btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #0a8000;
+  color: white;
+  cursor: pointer;
+  margin-top: 5px;
+  display: inline-block;
+  transition: background-color 0.2s;
+}
+
+#pay-btn:hover {
+  background-color: #065200;
+}
+
+/* Scrollbar styling for messages */
+#messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+#messages::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+
+#messages::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 6px;
+}
+
+#messages::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .chat {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  #user-input {
+    width: 60%;
+  }
+}
